@@ -71,7 +71,7 @@
 <link href="/css/main.css?v=5.1.0" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="paper reading," />
 
 
 
@@ -87,19 +87,23 @@
 
 
 
-<meta name="description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.
-Quick">
+<meta name="description" content="这是一篇发表在ICCV2015上的文章，相比现在大火的deep learning的方法来做人脸检测，它采用了基于范例的方法来做，并在性能上也具有比较大的竞争力。文章地址
+introduction基于范例的方法应该最早追溯到ICCV2011上的这一篇文章“ensemble of exemplar-svms for object detection and beyond.”[1]对于分类问题，比较传统">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hello World">
-<meta property="og:url" content="http://yoursite.com/2017/03/14/hello-world/index.html">
+<meta property="og:title" content="”visual phrases for exemplar face detection“ paper reading">
+<meta property="og:url" content="http://yoursite.com/2017/03/14/new-post/index.html">
 <meta property="og:site_name" content="weiiLu's blog">
-<meta property="og:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.
-Quick">
-<meta property="og:updated_time" content="2017-03-14T08:03:38.077Z">
+<meta property="og:description" content="这是一篇发表在ICCV2015上的文章，相比现在大火的deep learning的方法来做人脸检测，它采用了基于范例的方法来做，并在性能上也具有比较大的竞争力。文章地址
+introduction基于范例的方法应该最早追溯到ICCV2011上的这一篇文章“ensemble of exemplar-svms for object detection and beyond.”[1]对于分类问题，比较传统">
+<meta property="og:image" content="http://images.cnitblog.com/blog/460184/201401/201036003758.png">
+<meta property="og:image" content="http://wx2.sinaimg.cn/mw690/006EPv7bgy1fdmhe4a3otj310409z7kw.jpg">
+<meta property="og:image" content="http://wx2.sinaimg.cn/mw1024/006EPv7bgy1fdmhkkmdczj30h309dgoo.jpg">
+<meta property="og:updated_time" content="2017-03-14T14:40:15.171Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hello World">
-<meta name="twitter:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.
-Quick">
+<meta name="twitter:title" content="”visual phrases for exemplar face detection“ paper reading">
+<meta name="twitter:description" content="这是一篇发表在ICCV2015上的文章，相比现在大火的deep learning的方法来做人脸检测，它采用了基于范例的方法来做，并在性能上也具有比较大的竞争力。文章地址
+introduction基于范例的方法应该最早追溯到ICCV2011上的这一篇文章“ensemble of exemplar-svms for object detection and beyond.”[1]对于分类问题，比较传统">
+<meta name="twitter:image" content="http://images.cnitblog.com/blog/460184/201401/201036003758.png">
 
 
 
@@ -127,13 +131,13 @@ Quick">
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2017/03/14/hello-world/"/>
+  <link rel="canonical" href="http://yoursite.com/2017/03/14/new-post/"/>
 
 
 
 
 
-  <title> Hello World | weiiLu's blog </title>
+  <title> ”visual phrases for exemplar face detection“ paper reading | weiiLu's blog </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-CN">
@@ -252,7 +256,7 @@ Quick">
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/03/14/hello-world/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/03/14/new-post/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="weiiLu">
@@ -273,7 +277,7 @@ Quick">
             
             
               
-                Hello World
+                ”visual phrases for exemplar face detection“ paper reading
               
             
           </h1>
@@ -288,7 +292,7 @@ Quick">
               
                 <span class="post-meta-item-text">Veröffentlicht am</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-03-14T16:03:38+08:00">
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-03-14T16:20:08+08:00">
                 2017-03-14
               </time>
             
@@ -324,15 +328,9 @@ Quick">
       
 
       
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
+        <p>这是一篇发表在ICCV2015上的文章，相比现在大火的deep learning的方法来做人脸检测，它采用了基于范例的方法来做，并在性能上也具有比较大的竞争力。<a href="https://www.computer.org/csdl/proceedings/iccv/2015/8391/00/8391b994-abs.html" target="_blank" rel="external">文章地址</a></p>
+<h2 id="introduction"><a href="#introduction" class="headerlink" title="introduction"></a>introduction</h2><p>基于范例的方法应该最早追溯到ICCV2011上的这一篇文章<a href="http://www.frontiersincomputervision.com/slides/FCV_Poster_Efros.pdf" target="_blank" rel="external">“ensemble of exemplar-svms for object detection and beyond.”</a>[1]<br><img src="http://images.cnitblog.com/blog/460184/201401/201036003758.png" alt="global model vs exemplar based model"><br>对于分类问题，比较传统的做法是将所有正负样本放在一起，寻求一个超平面，例如左图，是去学习一个全局模型。而基于范例的方法，是将每一个正样本与所有不包含正样本的纯粹负样本放在一起训练，每个正样本形成各自的 exemplar SVM。这种做法似乎完全忽视正样本了之间的共性，而去充分考虑每一个正样本的个性，可以想象当正样本数量足够大时，这种做法可以最大程度地应对目标的各种形变。<br>这种模板集成的方法看起来很“暴力”，但却十分有效。相比较上一篇文章来说，<a href="https://www.computer.org/csdl/proceedings/cvpr/2014/5118/00/5118b843.pdf" target="_blank" rel="external">“Efficient boosted exemplar-based face detection.”</a>比较接近作者的工作，一种基于范例的高效人脸检测框架，它的做法是每个范例将待检测图处理成投票图以获得置信图，然后将置信图相加得到最终的置信图，根据峰值来定位人脸。<br><img src="http://wx2.sinaimg.cn/mw690/006EPv7bgy1fdmhe4a3otj310409z7kw.jpg" alt="images"><br>这篇文章也是基于范例的一种检测框架 以前呢是对范例提取局部特征 然后生成视觉词，这样就使得范例成为带有位置信息的视觉词袋，然后它在目标图像上产生一张投票图。现在呢在此基础上挖掘了视觉词之间的关联信息，组成视觉短语。进一步提高准确率。<br><img src="http://wx2.sinaimg.cn/mw1024/006EPv7bgy1fdmhkkmdczj30h309dgoo.jpg" alt="images3"><br>在测试阶段，每一个范例对于不同尺度的测试图进行投票，然后在将来自所有范例的投票加和去检测人脸。这种方法呢避免了繁琐的滑窗，同时也可以很灵活的增加更多的范例。</p>
+<h2 id="proposed-approach"><a href="#proposed-approach" class="headerlink" title="proposed approach"></a>proposed approach</h2><p>[1]: Malisiewicz, T, Abhinav Gupta, and Alexei A. Efros. “Ensemble of exemplar-svms for object detection and beyond.” Computer Vision (ICCV), 2011 IEEE International Conference on. IEEE, 2011.</p>
 
       
     </div>
@@ -360,6 +358,12 @@ Quick">
 
     <footer class="post-footer">
       
+        <div class="post-tags">
+          
+            <a href="/tags/paper-reading/" rel="tag"># paper reading</a>
+          
+        </div>
+      
 
       
         
@@ -369,15 +373,15 @@ Quick">
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
+              <a href="/2017/03/14/hello-world/" rel="next" title="Hello World">
+                <i class="fa fa-chevron-left"></i> Hello World
+              </a>
+            
           </div>
 
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2017/03/14/new-post/" rel="prev" title="”visual phrases for exemplar face detection“ paper reading">
-                ”visual phrases for exemplar face detection“ paper reading <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -526,7 +530,7 @@ Quick">
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Quick-Start"><span class="nav-number">1.</span> <span class="nav-text">Quick Start</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Create-a-new-post"><span class="nav-number">1.1.</span> <span class="nav-text">Create a new post</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Run-server"><span class="nav-number">1.2.</span> <span class="nav-text">Run server</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Generate-static-files"><span class="nav-number">1.3.</span> <span class="nav-text">Generate static files</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Deploy-to-remote-sites"><span class="nav-number">1.4.</span> <span class="nav-text">Deploy to remote sites</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#introduction"><span class="nav-number">1.</span> <span class="nav-text">introduction</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#proposed-approach"><span class="nav-number">2.</span> <span class="nav-text">proposed approach</span></a></li></ol></div>
             
 
           </div>
