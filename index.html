@@ -5,7 +5,7 @@
   
 
 
-<html class="theme-next pisces use-motion" lang="zh-CN">
+<html class="theme-next pisces use-motion" lang="zh-Hans">
 <head>
   <meta charset="UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -109,7 +109,7 @@
     motion: true,
     duoshuo: {
       userId: '0',
-      author: 'Author'
+      author: '博主'
     },
     algolia: {
       applicationID: '',
@@ -132,7 +132,7 @@
   <title> weiiLu's blog </title>
 </head>
 
-<body itemscope itemtype="http://schema.org/WebPage" lang="zh-CN">
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
 
   
 
@@ -197,7 +197,7 @@
             
               <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
             
-            Startseite
+            首页
           </a>
         </li>
       
@@ -207,7 +207,7 @@
             
               <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
             
-            Archiv
+            归档
           </a>
         </li>
       
@@ -217,7 +217,7 @@
             
               <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
             
-            Tags
+            标签
           </a>
         </li>
       
@@ -287,9 +287,9 @@
                 <i class="fa fa-calendar-o"></i>
               </span>
               
-                <span class="post-meta-item-text">Veröffentlicht am</span>
+                <span class="post-meta-item-text">发表于</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-03-14T16:20:08+08:00">
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-03-14T16:20:08+08:00">
                 2017-03-14
               </time>
             
@@ -326,12 +326,14 @@
 
       
         
-          
-            <p>这是一篇发表在ICCV2015上的文章，相比现在大火的deep learning的方法来做人脸检测，它采用了基于范例的方法来做，并在性能上也具有比较大的竞争力。<a href="https://www.computer.org/csdl/proceedings/iccv/2015/8391/00/8391b994-abs.html" target="_blank" rel="external">文章地址</a></p>
-<h2 id="introduction"><a href="#introduction" class="headerlink" title="introduction"></a>introduction</h2><p>基于范例的方法应该最早追溯到ICCV2011上的这一篇文章<a href="http://www.frontiersincomputervision.com/slides/FCV_Poster_Efros.pdf" target="_blank" rel="external">“ensemble of exemplar-svms for object detection and beyond.”</a>[1]<br><img src="http://images.cnitblog.com/blog/460184/201401/201036003758.png" alt="global model vs exemplar based model"><br>对于分类问题，比较传统的做法是将所有正负样本放在一起，寻求一个超平面，例如左图，是去学习一个全局模型。而基于范例的方法，是将每一个正样本与所有不包含正样本的纯粹负样本放在一起训练，每个正样本形成各自的 exemplar SVM。这种做法似乎完全忽视正样本了之间的共性，而去充分考虑每一个正样本的个性，可以想象当正样本数量足够大时，这种做法可以最大程度地应对目标的各种形变。<br>这种模板集成的方法看起来很“暴力”，但却十分有效。相比较上一篇文章来说，<a href="https://www.computer.org/csdl/proceedings/cvpr/2014/5118/00/5118b843.pdf" target="_blank" rel="external">“Efficient boosted exemplar-based face detection.”</a>比较接近作者的工作，一种基于范例的高效人脸检测框架，它的做法是每个范例将待检测图处理成投票图以获得置信图，然后将置信图相加得到最终的置信图，根据峰值来定位人脸。<br><img src="http://wx2.sinaimg.cn/mw690/006EPv7bgy1fdmhe4a3otj310409z7kw.jpg" alt="images"><br>这篇文章也是基于范例的一种检测框架 以前呢是对范例提取局部特征 然后生成视觉词，这样就使得范例成为带有位置信息的视觉词袋，然后它在目标图像上产生一张投票图。现在呢在此基础上挖掘了视觉词之间的关联信息，组成视觉短语。进一步提高准确率。<br><img src="http://wx2.sinaimg.cn/mw1024/006EPv7bgy1fdmhkkmdczj30h309dgoo.jpg" alt="images3"><br>在测试阶段，每一个范例对于不同尺度的测试图进行投票，然后在将来自所有范例的投票加和去检测人脸。这种方法呢避免了繁琐的滑窗，同时也可以很灵活的增加更多的范例。</p>
-<h2 id="proposed-approach"><a href="#proposed-approach" class="headerlink" title="proposed approach"></a>proposed approach</h2><p>[1]: Malisiewicz, T, Abhinav Gupta, and Alexei A. Efros. “Ensemble of exemplar-svms for object detection and beyond.” Computer Vision (ICCV), 2011 IEEE International Conference on. IEEE, 2011.</p>
-
-          
+          <p>这是一篇发表在ICCV2015上的文章，相比现在大火的deep learning的方法来做人脸检测，它采用了基于范例的方法来做，并在性能上也具有比较大的竞争力。<a href="https://www.computer.org/csdl/proceedings/iccv/2015/8391/00/8391b994-abs.html">文章地址</a><br>
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2017/03/14/new-post/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
@@ -410,9 +412,9 @@
                 <i class="fa fa-calendar-o"></i>
               </span>
               
-                <span class="post-meta-item-text">Veröffentlicht am</span>
+                <span class="post-meta-item-text">发表于</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-03-14T16:03:38+08:00">
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-03-14T16:03:38+08:00">
                 2017-03-14
               </time>
             
@@ -449,18 +451,18 @@
 
       
         
-          
-            <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
+          <p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
 <h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
+<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
 <h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
-
-          
+<p>More info: <a href="https://hexo.io/docs/server.html">Server</a><br>
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2017/03/14/hello-world/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
@@ -539,7 +541,7 @@
             <div class="site-state-item site-state-posts">
               <a href="/archives">
                 <span class="site-state-item-count">2</span>
-                <span class="site-state-item-name">Artikel</span>
+                <span class="site-state-item-name">日志</span>
               </a>
             </div>
           
@@ -552,7 +554,7 @@
             <div class="site-state-item site-state-tags">
               
                 <span class="site-state-item-count">1</span>
-                <span class="site-state-item-name">Tags</span>
+                <span class="site-state-item-name">标签</span>
               
             </div>
           
@@ -631,11 +633,11 @@
 
 
 <div class="powered-by">
-  Erstellt mit  <a class="theme-link" href="https://hexo.io">Hexo</a>
+  由 <a class="theme-link" href="https://hexo.io">Hexo</a> 强力驱动
 </div>
 
 <div class="theme-info">
-  Theme -
+  主题 -
   <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
     NexT.Pisces
   </a>
@@ -718,6 +720,9 @@
 
   
 
+
+
+  
   
 
 
