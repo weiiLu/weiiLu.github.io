@@ -71,7 +71,7 @@
 <link href="/css/main.css?v=5.1.0" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="coding," />
 
 
 
@@ -87,16 +87,19 @@
 
 
 
-<meta name="description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.">
+<meta name="description" content="数据集本文采用Ronald Fisher的Iris flower数据集作为例子来训练神经网络。">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hello World">
-<meta property="og:url" content="http://yoursite.com/2017/03/14/hello-world/index.html">
+<meta property="og:title" content="matlab实现BP神经网络实例">
+<meta property="og:url" content="http://yoursite.com/2017/03/17/bp-network/index.html">
 <meta property="og:site_name" content="weiiLu's blog">
-<meta property="og:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.">
-<meta property="og:updated_time" content="2017-03-15T07:33:47.926Z">
+<meta property="og:description" content="数据集本文采用Ronald Fisher的Iris flower数据集作为例子来训练神经网络。">
+<meta property="og:image" content="http://wx3.sinaimg.cn/mw690/006EPv7bgy1fdpxc4glszj30g00dj0ta.jpg">
+<meta property="og:image" content="http://wx3.sinaimg.cn/mw690/006EPv7bgy1fdpxg7n1kuj30sp046q2v.jpg">
+<meta property="og:updated_time" content="2017-03-17T08:43:13.194Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hello World">
-<meta name="twitter:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.">
+<meta name="twitter:title" content="matlab实现BP神经网络实例">
+<meta name="twitter:description" content="数据集本文采用Ronald Fisher的Iris flower数据集作为例子来训练神经网络。">
+<meta name="twitter:image" content="http://wx3.sinaimg.cn/mw690/006EPv7bgy1fdpxc4glszj30g00dj0ta.jpg">
 
 
 
@@ -124,13 +127,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2017/03/14/hello-world/"/>
+  <link rel="canonical" href="http://yoursite.com/2017/03/17/bp-network/"/>
 
 
 
 
 
-  <title> Hello World | weiiLu's blog </title>
+  <title> matlab实现BP神经网络实例 | weiiLu's blog </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -249,7 +252,7 @@
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/03/14/hello-world/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/03/17/bp-network/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="weiiLu">
@@ -270,7 +273,7 @@
             
             
               
-                Hello World
+                matlab实现BP神经网络实例
               
             
           </h1>
@@ -285,8 +288,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-03-14T16:03:38+08:00">
-                2017-03-14
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-03-17T16:01:10+08:00">
+                2017-03-17
               </time>
             
 
@@ -321,15 +324,9 @@
       
 
       
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.<br><a id="more"></a></p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
+        <h1 id="数据集"><a href="#数据集" class="headerlink" title="数据集"></a>数据集</h1><p>本文采用Ronald Fisher的Iris flower数据集作为例子来训练神经网络。<br><a id="more"></a><br>在这个数据集中有三种花，不同品种的Iris花的花萼长度、花萼宽度、花瓣长度、花瓣宽度会有差异。现有一批已知品种的Iris花的花萼长度、花萼宽度、花瓣长度、花瓣宽度的数据。<br>它的<a href="https://en.wikipedia.org/wiki/Iris_flower_data_set" target="_blank" rel="external">维基百科</a>主页上有相应的数据down下来用就好。总共150条数据，三种花，每种各50，现在各取25条分别作为train set和test set，这样训练集和测试集就各有75条数据。</p>
+<h1 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h1><figure class="highlight matlab"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div></pre></td><td class="code"><pre><div class="line"><span class="comment">%读取训练数据</span></div><div class="line">[f1,f2,f3,f4,class]=textread(<span class="string">'trainData.txt'</span>,<span class="string">'%f%f%f%f%f'</span>,<span class="number">75</span>);</div><div class="line"><span class="comment">%特征归一化</span></div><div class="line">[input,minI,maxI] = premnmx([f1,f2,f3,f4]');</div><div class="line"><span class="comment">%构造输出矩阵</span></div><div class="line">s = <span class="built_in">length</span>(class);</div><div class="line">output = <span class="built_in">zeros</span>(s,<span class="number">3</span>);</div><div class="line"><span class="keyword">for</span> <span class="built_in">i</span> = <span class="number">1</span> : s</div><div class="line">    output(<span class="built_in">i</span>,class(<span class="built_in">i</span>)) = <span class="number">1</span>;</div><div class="line"><span class="keyword">end</span></div><div class="line"><span class="comment">%创建神经网络</span></div><div class="line"><span class="comment">%参数解释：第一个参数是N*2的矩阵每一行为其所在的极小极大值，例如[1 0.2 -0.1 -1]-&gt;[-1 1]</span></div><div class="line"><span class="comment">%         第二个参数是一个K维行向量表示网络中各层节点数。例如[10 3]</span></div><div class="line"><span class="comment">%         第三个参数是每一层网络所采用的激活函数。logsig表示s形函数（0,1），purelin表示线性函数，tansig表示双极s形（-1,1）</span></div><div class="line"><span class="comment">%         第四个参数是学习规则采用的训练算法。traingd表示梯度下降BP训练算法，traingdx表示梯度下降自适应学习率</span></div><div class="line">net = newff(minmax(input),[<span class="number">10</span> <span class="number">3</span>],&#123;<span class="string">'logsig'</span> <span class="string">'purelin'</span>&#125;,<span class="string">'traingdx'</span>);</div><div class="line"><span class="comment">%设置训练参数</span></div><div class="line">net.trainparam.show = <span class="number">50</span>;     <span class="comment">%显示中间结果的周期</span></div><div class="line">net.trainparam.epochs = <span class="number">500</span>;  <span class="comment">%最大迭代次数</span></div><div class="line">net.trainparam.goal = <span class="number">0.01</span>;   <span class="comment">%神经网络训练的目标误差</span></div><div class="line">net.trainparam.lr = <span class="number">0.01</span>;     <span class="comment">%设置学习率</span></div><div class="line"></div><div class="line"><span class="comment">%开始训练</span></div><div class="line">net = train(net,input,output');</div><div class="line"><span class="comment">%读取测试数据</span></div><div class="line">[t1 t2 t3 t4 c] = textread(<span class="string">'testData.txt'</span>,<span class="string">'%f%f%f%f%f'</span>,<span class="number">75</span>);</div><div class="line"><span class="comment">%测试数据归一化</span></div><div class="line"><span class="comment">%在训练网络时如果所用的是经过归一化的数据，那么以后所用的数据也应该进行“预处理”，minI，maxI分别为premnmx函数在前期特征归一化得到的最小最大值</span></div><div class="line">testInput = tramnmx([t1,t2,t3,t4]',minI,maxI);</div><div class="line"><span class="comment">%仿真</span></div><div class="line">Y = sim(net,testInput);</div><div class="line"><span class="comment">%统计识别正确率</span></div><div class="line">[s1,s2] = <span class="built_in">size</span>(Y);</div><div class="line">hitNum = <span class="number">0</span>;</div><div class="line"><span class="keyword">for</span> <span class="built_in">i</span> = <span class="number">1</span> : s2</div><div class="line">    [m,Index] = max(Y(:,<span class="built_in">i</span>));</div><div class="line">    <span class="keyword">if</span>(Index == c(<span class="built_in">i</span>))</div><div class="line">        hitNum = hitNum + <span class="number">1</span>;</div><div class="line">    <span class="keyword">end</span></div><div class="line"><span class="keyword">end</span></div><div class="line">sprintf(<span class="string">'识别率是%3.3f%%'</span>,<span class="number">100</span>*hitNum/s2)</div></pre></td></tr></table></figure>
+<h1 id="性能"><a href="#性能" class="headerlink" title="性能"></a>性能</h1><p>下图显示在150次左右达到收敛，识别率稳定在96%<br><img src="http://wx3.sinaimg.cn/mw690/006EPv7bgy1fdpxc4glszj30g00dj0ta.jpg" alt="performance1"><br><img src="http://wx3.sinaimg.cn/mw690/006EPv7bgy1fdpxg7n1kuj30sp046q2v.jpg" alt="performance2"></p>
 
       
     </div>
@@ -357,6 +354,12 @@
 
     <footer class="post-footer">
       
+        <div class="post-tags">
+          
+            <a href="/tags/coding/" rel="tag"># coding</a>
+          
+        </div>
+      
 
       
         
@@ -366,15 +369,15 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
+              <a href="/2017/03/14/new-post/" rel="next" title="”visual phrases for exemplar face detection“ paper reading">
+                <i class="fa fa-chevron-left"></i> ”visual phrases for exemplar face detection“ paper reading
+              </a>
+            
           </div>
 
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2017/03/14/new-post/" rel="prev" title="”visual phrases for exemplar face detection“ paper reading">
-                ”visual phrases for exemplar face detection“ paper reading <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -523,7 +526,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Quick-Start"><span class="nav-number">1.</span> <span class="nav-text">Quick Start</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Create-a-new-post"><span class="nav-number">1.1.</span> <span class="nav-text">Create a new post</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Run-server"><span class="nav-number">1.2.</span> <span class="nav-text">Run server</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Generate-static-files"><span class="nav-number">1.3.</span> <span class="nav-text">Generate static files</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Deploy-to-remote-sites"><span class="nav-number">1.4.</span> <span class="nav-text">Deploy to remote sites</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#数据集"><span class="nav-number">1.</span> <span class="nav-text">数据集</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#代码"><span class="nav-number">2.</span> <span class="nav-text">代码</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#性能"><span class="nav-number">3.</span> <span class="nav-text">性能</span></a></li></ol></div>
             
 
           </div>
