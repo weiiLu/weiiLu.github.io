@@ -71,7 +71,7 @@
 <link href="/css/main.css?v=5.1.0" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="日记," />
+  <meta name="keywords" content="deep learing," />
 
 
 
@@ -87,15 +87,19 @@
 
 
 
+<meta name="description" content="卷积神经网络是什么呢？为什么它是如此的重要？这两个问题相信读者在通过本文的介绍之后，心中都能有一个基本的答案。卷积神经网络（ConvNets或者CNNs）是神经网络的一种，如今在众多领域中被证明是非常有效的网络，例如在图像识别和分类中。CNN同样也被成功的应用在人脸识别，机器人辅助视觉以及无人驾驶中的物体和交通信号灯的处理上，可谓一大杀器。(•̀ᴗ•́)و">
 <meta property="og:type" content="article">
-<meta property="og:title" content="日记1">
-<meta property="og:url" content="http://yoursite.com/2017/03/17/diary/index.html">
+<meta property="og:title" content="对CNN的一个比较直观的解释">
+<meta property="og:url" content="http://yoursite.com/2017/03/17/cnn-explanation/index.html">
 <meta property="og:site_name" content="weiiLu's blog">
-<meta property="og:image" content="http://omyi7khf5.bkt.clouddn.com/conv_all.png">
-<meta property="og:updated_time" content="2017-03-17T11:28:07.587Z">
+<meta property="og:description" content="卷积神经网络是什么呢？为什么它是如此的重要？这两个问题相信读者在通过本文的介绍之后，心中都能有一个基本的答案。卷积神经网络（ConvNets或者CNNs）是神经网络的一种，如今在众多领域中被证明是非常有效的网络，例如在图像识别和分类中。CNN同样也被成功的应用在人脸识别，机器人辅助视觉以及无人驾驶中的物体和交通信号灯的处理上，可谓一大杀器。(•̀ᴗ•́)و">
+<meta property="og:image" content="http://omyi7khf5.bkt.clouddn.com/convnets-use.png">
+<meta property="og:image" content="http://omyi7khf5.bkt.clouddn.com/screen-shot-2016-08-07-at-4-17-11-pm.png">
+<meta property="og:updated_time" content="2017-03-17T12:03:44.843Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="日记1">
-<meta name="twitter:image" content="http://omyi7khf5.bkt.clouddn.com/conv_all.png">
+<meta name="twitter:title" content="对CNN的一个比较直观的解释">
+<meta name="twitter:description" content="卷积神经网络是什么呢？为什么它是如此的重要？这两个问题相信读者在通过本文的介绍之后，心中都能有一个基本的答案。卷积神经网络（ConvNets或者CNNs）是神经网络的一种，如今在众多领域中被证明是非常有效的网络，例如在图像识别和分类中。CNN同样也被成功的应用在人脸识别，机器人辅助视觉以及无人驾驶中的物体和交通信号灯的处理上，可谓一大杀器。(•̀ᴗ•́)و">
+<meta name="twitter:image" content="http://omyi7khf5.bkt.clouddn.com/convnets-use.png">
 
 
 
@@ -123,13 +127,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2017/03/17/diary/"/>
+  <link rel="canonical" href="http://yoursite.com/2017/03/17/cnn-explanation/"/>
 
 
 
 
 
-  <title> 日记1 | weiiLu's blog </title>
+  <title> 对CNN的一个比较直观的解释 | weiiLu's blog </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -248,7 +252,7 @@
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/03/17/diary/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/03/17/cnn-explanation/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="weiiLu">
@@ -269,7 +273,7 @@
             
             
               
-                日记1
+                对CNN的一个比较直观的解释
               
             
           </h1>
@@ -284,7 +288,7 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-03-17T17:19:06+08:00">
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-03-17T19:32:11+08:00">
                 2017-03-17
               </time>
             
@@ -320,7 +324,11 @@
       
 
       
-        <p><iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="330" height="86" src="//music.163.com/outchain/player?type=2&id=28563317&auto=1&height=66"></iframe><br><img src="http://omyi7khf5.bkt.clouddn.com/conv_all.png" alt="images"></p>
+        <h1 id="卷积神经网络是什么呢？为什么它是如此的重要？"><a href="#卷积神经网络是什么呢？为什么它是如此的重要？" class="headerlink" title="卷积神经网络是什么呢？为什么它是如此的重要？"></a>卷积神经网络是什么呢？为什么它是如此的重要？</h1><p>这两个问题相信读者在通过本文的介绍之后，心中都能有一个基本的答案。卷积神经网络（ConvNets或者CNNs）是神经网络的一种，如今在众多领域中被证明是非常有效的网络，例如在图像识别和分类中。<br>CNN同样也被成功的应用在人脸识别，机器人辅助视觉以及无人驾驶中的物体和交通信号灯的处理上，可谓一大杀器。(•̀ᴗ•́)و<br><a id="more"></a></p>
+<p><center><img src="http://omyi7khf5.bkt.clouddn.com/convnets-use.png" alt="convnets-use"></center></p>
+<p><center><font color="grey"><strong>figure1</strong></font></center><br>在上图的<strong>figure1</strong>中，一个CNN能够识别场景，并且给出例如“桥梁”、“铁路”和“网球”这样的建议标签。图<strong>figure2</strong>中则展示的是CNN用于识别一幅图中的每一个物体，例如人，动物等等。之后，CNN也被用于自然语言处理的任务上面（例如情感分类）。</p>
+<p><center><img src="http://omyi7khf5.bkt.clouddn.com/screen-shot-2016-08-07-at-4-17-11-pm.png" alt="screen11"></center></p>
+<p><center><font color="grey"><strong>figure2</strong></font></center><br>未完待续。。。</p>
 
       
     </div>
@@ -350,7 +358,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/日记/" rel="tag"># 日记</a>
+            <a href="/tags/deep-learing/" rel="tag"># deep learing</a>
           
         </div>
       
@@ -363,8 +371,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2017/03/17/bp-network/" rel="next" title="matlab实现BP神经网络实例">
-                <i class="fa fa-chevron-left"></i> matlab实现BP神经网络实例
+              <a href="/2017/03/17/diary/" rel="next" title="日记1">
+                <i class="fa fa-chevron-left"></i> 日记1
               </a>
             
           </div>
@@ -372,10 +380,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2017/03/17/cnn-explanation/" rel="prev" title="对CNN的一个比较直观的解释">
-                对CNN的一个比较直观的解释 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -422,8 +426,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview sidebar-panel sidebar-panel-active">
+      <section class="site-overview sidebar-panel">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="/images/avatar.png"
@@ -505,6 +518,22 @@
 
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#卷积神经网络是什么呢？为什么它是如此的重要？"><span class="nav-number">1.</span> <span class="nav-text">卷积神经网络是什么呢？为什么它是如此的重要？</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
